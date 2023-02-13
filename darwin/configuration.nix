@@ -39,6 +39,9 @@
       lfs.enable = true;
       userEmail = "isabella@skorepova.info";
       userName = "Isabella Skorepova";
+      extraConfig = {
+        init.defaultBranch = "main";
+      };
     };
   };
 }
