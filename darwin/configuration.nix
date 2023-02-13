@@ -8,6 +8,7 @@
  
   nix = {
     settings = {
+      auto-optimise-store = true;
       substituters = [
         "https://nix-community.cachix.org"
         "https://cache.nixos.org/"
@@ -24,6 +25,7 @@
     pkgs.htop
     pkgs.jq
     pkgs.vscodium
+    pkgs.git
   ];
 
   users.users.isabella = {
@@ -32,6 +34,8 @@
   };
 
   system.stateVersion = 4;
+  home-manager.useGlobalPkgs = true;
+  home-manager.useUserPackages = true;
   home-manager.users.isabella = {pkgs,...}: {
     home.stateVersion = "22.11";
     programs.git = {
@@ -43,6 +47,16 @@
         init.defaultBranch = "main";
       };
     };
+  };
+  homebrew = {
+    enable = true;
+    onActivation.autoUpdate = true;
+    onActivation.upgrade = true;
+    casks = [
+      "slack"
+      "firefox"
+      "telegram"
+    ];
   };
 }
 
