@@ -26,6 +26,8 @@
     pkgs.jq
     pkgs.vscodium
     pkgs.git
+    pkgs.gh
+    pkgs.rectangle
   ];
 
   users.users.isabella = {
