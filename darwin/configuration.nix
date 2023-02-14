@@ -28,6 +28,7 @@
     pkgs.git
     pkgs.gh
     pkgs.rectangle
+    pkgs.nushell
   ];
 
   users.users.isabella = {
@@ -49,7 +50,13 @@
         init.defaultBranch = "main";
       };
     };
+    programs.nushell = {
+      enable = true;
+      envFile.source = ../nushell/env.nu;
+      configFile.source = ../nushell/config.nu;
+    };
   };
+
   homebrew = {
     enable = true;
     onActivation.autoUpdate = true;
