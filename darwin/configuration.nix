@@ -79,6 +79,7 @@
     casks = [
       "firefox"
       "telegram"
+      "figma"
     ];
   };
 }
