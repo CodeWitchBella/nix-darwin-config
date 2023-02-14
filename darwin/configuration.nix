@@ -29,6 +29,7 @@
     pkgs.gh
     pkgs.rectangle
     pkgs.nushell
+    pkgs.nodejs
   ];
 
   users.users.isabella = {
