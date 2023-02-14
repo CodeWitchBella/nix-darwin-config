@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
 
   services.nix-daemon.enable = true;
@@ -55,6 +55,15 @@
       envFile.source = ../nushell/env.nu;
       configFile.source = ../nushell/config.nu;
     };
+
+      home.file = lib.optionalAttrs pkgs.stdenv.isDarwin {
+        "Library/Application Support/nushell/config.nu".text = ''
+          source  ~/.config/nushell/config.nu
+        '';
+        "Library/Application Support/nushell/env.nu".text = ''
+          source  ~/.config/nushell/env.nu
+        '';
+      };
   };
 
   homebrew = {
