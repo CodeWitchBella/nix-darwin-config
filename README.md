@@ -14,4 +14,6 @@ cp -R nix-config/nix .config/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+Docker desktop is installed manually: https://docs.docker.com/desktop/install/mac-install/
+
 ... more stuff needed, but I did no really record everything :-(

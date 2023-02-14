@@ -18,6 +18,7 @@
       ];
     };
   };
+  nixpkgs.config.allowUnfree = true;
   
   environment.systemPackages = [
     pkgs.curl
@@ -31,6 +32,9 @@
     pkgs.nushell
     pkgs.nodejs
     pkgs.awscli2
+    pkgs.lastpass-cli
+    pkgs.discord
+    pkgs.docker-compose
   ];
 
   users.users.isabella = {
@@ -73,7 +77,6 @@
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     casks = [
-      "slack"
       "firefox"
       "telegram"
     ];
