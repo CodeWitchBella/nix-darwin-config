@@ -30,6 +30,7 @@
     pkgs.rectangle
     pkgs.nushell
     pkgs.nodejs
+    pkgs.awscli2
   ];
 
   users.users.isabella = {
