@@ -79,6 +79,7 @@
       "firefox"
       "telegram"
       "figma"
+      "zoom"
     ];
   };
 }
