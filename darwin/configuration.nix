@@ -30,7 +30,6 @@
     pkgs.gh
     pkgs.rectangle
     pkgs.nushell
-    pkgs.nodejs
     pkgs.awscli2
     pkgs.lastpass-cli
     pkgs.discord
