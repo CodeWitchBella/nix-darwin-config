@@ -34,6 +34,7 @@
     pkgs.lastpass-cli
     pkgs.discord
     pkgs.docker-compose
+    pkgs.cachix
   ];
 
   users.users.isabella = {
