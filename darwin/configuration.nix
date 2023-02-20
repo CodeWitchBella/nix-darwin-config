@@ -27,6 +27,7 @@
     pkgs.jq
     pkgs.vscodium
     pkgs.git
+    pkgs.git-lfs
     pkgs.gh
     pkgs.rectangle
     pkgs.nushell
