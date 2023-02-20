@@ -54,6 +54,7 @@
       userName = "Isabella Skorepova";
       extraConfig = {
         init.defaultBranch = "main";
+        submodule.recurse = "true";
       };
     };
     programs.nushell = {
