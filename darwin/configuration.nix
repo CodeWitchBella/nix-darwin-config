@@ -5,6 +5,7 @@
   
   programs.zsh.enable = true;
   #nixpkgs.config.allowUnfree = true;
+  networking.hostName = "IsabellaM2";
  
   nix = {
     settings = {

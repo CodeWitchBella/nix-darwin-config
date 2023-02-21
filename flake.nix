@@ -14,7 +14,7 @@
 
   outputs = { self, nixpkgs, home-manager, darwin }:
   {
-    darwinConfigurations."Isabellas-MacBook-M2" = darwin.lib.darwinSystem {
+    darwinConfigurations."IsabellaM2" = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
         home-manager.darwinModules.home-manager
