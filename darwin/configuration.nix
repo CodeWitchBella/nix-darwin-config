@@ -38,6 +38,7 @@
     pkgs.discord
     pkgs.docker-compose
     pkgs.cachix
+    pkgs.nodejs
   ];
 
   users.users.isabella = {
