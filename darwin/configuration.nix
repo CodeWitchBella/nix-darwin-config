@@ -86,6 +86,7 @@
       "telegram"
       "figma"
       "zoom"
+      "spotify"
     ];
   };
 }
