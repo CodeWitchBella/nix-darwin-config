@@ -60,4 +60,4 @@ let-env NU_PLUGIN_DIRS = [
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
-let-env PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin' | prepend '/run/current-system/sw/bin' | prepend '/Users/isabella/.nix-profile/bin/nix' | prepend '/Users/isabella/.local/bin' )
+let-env PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin' | prepend '/opt/homebrew/bin' | prepend '/run/current-system/sw/bin' | prepend '/Users/isabella/.nix-profile/bin/nix' | prepend '/Users/isabella/.local/bin' )
