@@ -87,6 +87,8 @@
       "figma"
       "zoom"
       "spotify"
+      "rectangle"
+      "visual-studio-code"
     ];
   };
 }
